@@ -21,7 +21,7 @@
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    background: #fff;
+    background: transparent;
     padding: 50px 60px 70px;
     text-align: center;
     border-radius: 10px;
@@ -30,7 +30,7 @@
  .form-box h1{
     font-size: 30px;
     margin-bottom: 60px;
-    color: #3c00a0;
+    color: #fff;
     position:relative;
  }
  
@@ -39,7 +39,7 @@
     width: 30px;
     height: 4px;
     border-radius:3px;
-    background:#3c00a0;
+    background:#fff;
     position:absolute;
     bottom: -12px;
     left:50%;
