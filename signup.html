@@ -38,32 +38,33 @@
        </div>
     </div>
     <script>
-    let signupBtn = document.getElementById("signupBtn");
-    let signinBtn = document.getElementById("signinBtn");
-    let nameField = document.getElementById("nameField");
-    let title = document.getElementById("title");
+      
+      let signupBtn = document.getElementById("signupBtn");
+      let signinBtn = document.getElementById("signinBtn");
+      let nameField = document.getElementById("nameField");
+      let title = document.getElementById("title");
     
-    signinBtn.onclick = function() {
-         nameField.style.maxHeight = "0";
-         title.style.opacity = 0;
-         setTimeout(function() {
-             title.innerHTML = "Sign In";
-             title.style.opacity = 1;
-         }, 500);
-         signupBtn.classList.add("disable");
-         signinBtn.classList.remove("disable");                                 
-    }
+      signinBtn.onclick = function() {
+           nameField.style.maxHeight = "0";
+           title.style.opacity = 0;
+           setTimeout(function() {
+               title.innerHTML = "Sign In";
+               title.style.opacity = 1;
+           }, 500);
+           signupBtn.classList.add("disable");
+           signinBtn.classList.remove("disable");                                 
+      }
 
-    signupBtn.onclick = function() {
-         nameField.style.maxHeight = "100%"; // or a value that makes the field fully visible
-         title.style.opacity = 0;
-         setTimeout(function() {
-             title.innerHTML = "Sign Up";
-             title.style.opacity = 1;
-         }, 500);
-         signinBtn.classList.add("disable");
-         signupBtn.classList.remove("disable");                                 
-    }
+      signupBtn.onclick = function() {
+           nameField.style.maxHeight = "100%"; // or a value that makes the field fully visible
+           title.style.opacity = 0;
+           setTimeout(function() {
+               title.innerHTML = "Sign Up";
+               title.style.opacity = 1;
+           }, 500);
+           signinBtn.classList.add("disable");
+           signupBtn.classList.remove("disable");                                 
+      }
     </script>
   </body>
 </html>
